@@ -1,12 +1,11 @@
 <?php
 class myClass {
-namespace foo;
   # Properties
 
   # Methods
-public function hide() {
-
-
+  function myFunction($string) {
+    $functionString = "Hello from function";# this can be returned once created in function
+    return $string;
   }
 
-} # end of class
+} # end of class*/

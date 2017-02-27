@@ -66,7 +66,7 @@ require('logic.php');
         </div>
       </div>
       <!--Checkboxes-->
-      <form action="site.php">
+      <form action="sitetwo.php">
         <h3>To fall down at your door, The Proclaimers?</h3>
         <input type="checkbox" name="chk" value="0"> Would walk 500 miles<br><!--name needed to send to DB-->
         <input type="checkbox" name="chk" value="1"> In addition to walking 500 miles, would walk 500 more<br>
@@ -74,3 +74,7 @@ require('logic.php');
         <input type="checkbox" name="chk" value="3"> Would walk more miles than 500 and 500 more<br>
         <input type="submit" value="Submit" name='chksub2'>
       </form>
+      <!--Correct Display-->
+      <?php if($_GET['chk']==3&&isset($_GET['chksub2'])): ?>
+        <?php echo "<h1>$string</h1>" ?>
+      <?php endif; ?>

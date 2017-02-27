@@ -89,7 +89,7 @@ require('logic.php');
 
       <?php if($_GET['chk']==8&&isset($_GET['chksub'])): ?>
 
-      <h1> Correct!</h1>
+        <?php echo "<h1>$string</h1>" ?>
         <div class="radio">
           <label>
             <h4>Continue?</h4>
@@ -101,5 +101,4 @@ require('logic.php');
               </form>
           </label>
         </div>
-
       <?php endif; ?>
