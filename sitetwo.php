@@ -75,6 +75,6 @@ require('logic.php');
         <input type="submit" value="Submit" name='chksub2'>
       </form>
       <!--Correct Display-->
-      <?php if($_GET['chk']==3&&isset($_GET['chksub2'])): ?>
+      <?php if($_GET['chk']==1&&isset($_GET['chksub2'])): ?>
         <?php echo "<h1>$string</h1>" ?>
       <?php endif; ?>
