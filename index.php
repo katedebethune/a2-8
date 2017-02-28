@@ -1,7 +1,6 @@
 <?php
 require('logic.php');
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,13 +11,11 @@ require('logic.php');
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
   </head>
-
   <body>
-    <header class="navbar-inverse" role="banner"> <!--this mod gives you the full dscreen black navbar-->
+    <header class="navbar-inverse"> <!--this mod gives you the full dscreen black navbar-->
       <div class="container">
-        <nav role="navigation">
+        <nav>
           <div class="container-fluid">
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,40 +52,40 @@ require('logic.php');
 
     <div class="container">
       <!--Panel-->
-      <div class="panel panel-default">
-        <div class="panel-heading">
-        <h3 class="panel-title">Welcome!</h3>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          <h3 class="panel-title">Welcome!</h3>
+          </div>
+          <div class="panel-body">
+            <img src="images/front.jpg" class="img-responsive" alt="Responsive image">
+          </div>
         </div>
-        <div class="panel-body">
-          <img src="images/front.jpg" class="img-responsive" alt="Responsive image">
+
+        <br>
+        <h1>Sign In</h1>
+      <!--Validation Form-->
+      <form class="form-inline" action="index.php">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail3">Email address</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail3" placeholder="Email"> <!--name stores its ID in the _GET-->
         </div>
-      </div>
-      <br>
-      <h1>Sign In</h1>
-    <!--Validation Form-->
-    <form class="form-inline" action="index.php">
-      <div class="form-group">
-        <label class="sr-only" for="exampleInputEmail3">Email address</label>
-        <input type="email" name="email" class="form-control" id="exampleInputEmail3" placeholder="Email"> <!--name stores its ID in the _GET-->
-      </div>
-      <div class="form-group">
-        <label class="sr-only" for="exampleInputPassword3">Password</label>
-        <input type="password" name="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-      </div>
-      <button type="submit" class="btn btn-default">Sign in</button>
-    </form>
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputPassword3">Password</label>
+          <input type="password" name="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </form>
 
-    <!--Validation Message-->
-    <?php if($errors): ?>
-
-    <div class='alert alert-danger'>
-      <ul>
-        <?php foreach($errors as $error): ?>
-          <li><?=$error?></li>
-        <?php endforeach; ?>
-      </ul>
+      <!--Validation Message-->
+      <?php if($errors): ?>
+      <div class='alert alert-danger'>
+        <ul>
+          <?php foreach($errors as $error): ?>
+            <li><?=$error?></li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
     </div>
-
     <?php endif; ?>
 
     <!-- JavaScript library for Bootstrap use goes here before it -->
