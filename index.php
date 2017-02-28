@@ -17,7 +17,6 @@ require('logic.php');
       <div class="container">
         <nav>
           <div class="container-fluid">
-
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,28 +27,10 @@ require('logic.php');
               </button>
               <a class="navbar-brand" href="#">LessonTap</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <!--Link and dropdown on right-->
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link Right</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
       </div>
     </header>
-
     <div class="container">
       <!--Panel-->
         <div class="panel panel-default">
@@ -60,7 +41,6 @@ require('logic.php');
             <img src="images/front.jpg" class="img-responsive" alt="Responsive image">
           </div>
         </div>
-
         <br>
         <h1>Sign In</h1>
       <!--Validation Form-->
@@ -75,7 +55,6 @@ require('logic.php');
         </div>
         <button type="submit" class="btn btn-default">Sign in</button>
       </form>
-
       <!--Validation Message-->
       <?php if($errors): ?>
       <div class='alert alert-danger'>
