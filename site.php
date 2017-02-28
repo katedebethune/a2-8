@@ -1,6 +1,11 @@
 <?php
 require('logic.php');
 
+if($_GET['more']==Yes)
+{
+  header('Location: sitetwo.php');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -87,14 +92,17 @@ require('logic.php');
 
       <?php endif; ?>
 
+
+
       <?php if($_GET['chk']==8&&isset($_GET['chksub'])): ?>
 
-        <?php echo "<h1>$string</h1>" ?>
+      <?php echo "<h1>$string</h1>" ?>
         <div class="radio">
           <label>
             <h4>Continue?</h4>
-              <form action='sitetwo.php'>
+              <form action=''>
               <input type="radio" name="more" value="Yes" checked> Yes<br>
+              <input type="radio" name="more" value="No" checked> No<br>
               <br>
               <input type="submit" value="Submit">
 

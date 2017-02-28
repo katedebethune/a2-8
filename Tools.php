@@ -3,6 +3,7 @@ namespace foo;
 class Tools {
     /**
     * Pretty print given value to screen
+    * Static functions let you use them without instaniating them
     */
     public static function dump($mixed = null) {
         echo '<pre>';
