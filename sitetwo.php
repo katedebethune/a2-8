@@ -17,9 +17,9 @@ require('logic.php');
   </head>
 
   <body>
-    <header class="navbar-inverse" role="banner"> <!--this mod gives you the full dscreen black navbar-->
+    <header class="navbar-inverse"> <!--this mod gives you the full dscreen black navbar-->
       <div class="container">
-        <nav role="navigation">
+        <nav>
           <div class="container-fluid">
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,8 +32,6 @@ require('logic.php');
                 </button>
                 <a class="navbar-brand" href="#">LessonTap</a>
               </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-
           </div><!-- /.container-fluid -->
         </nav>
       </div>

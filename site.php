@@ -22,9 +22,9 @@ if($_GET['more']==Yes)
   </head>
 
   <body>
-    <header class="navbar-inverse" role="banner"> <!--this mod gives you the full dscreen black navbar-->
+    <header class="navbar-inverse"> <!--this mod gives you the full dscreen black navbar-->
       <div class="container">
-        <nav role="navigation">
+        <nav>
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
